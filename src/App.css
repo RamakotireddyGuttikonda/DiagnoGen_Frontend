@@ -1,6 +1,116 @@
-.container {
-    max-width: 800px;
+/* Reset some basic elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color:lightgoldenrodyellow;
+    color: #222;
+    height: 100%;
 }
-.card {
+
+/* Container styles */
+.container {
+    max-width: 700px;
+    margin: 60px auto;
+    background-color:burlywood;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Header styles */
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1e40af;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+/* Input form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+input.form-control {
+    padding: 12px 14px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input.form-control:focus {
+    border-color: #1e40af;
+    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.15);
+    outline: none;
+}
+
+/* Button styles */
+button.btn-primary {
+    background-color: #1e40af;
+    color: #fff;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+button.btn-primary:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* Error message */
+.alert-danger {
     margin-top: 20px;
+    padding: 14px;
+    border-radius: 10px;
+    background-color: #fee2e2;
+    color: #991b1b;
+    font-weight: 500;
+    border: 1px solid #fca5a5;
+}
+
+/* Result card */
+.card {
+    margin-top: 32px;
+    border-radius: 14px;
+    background-color: #f1f5f9;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin-bottom: 16px;
+}
+
+.card-body p {
+    margin: 6px 0;
+    font-size: 1rem;
+}
+
+.card-body img {
+    display: block;
+    max-width: 100%;
+    margin-top: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
 }
