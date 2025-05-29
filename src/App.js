@@ -27,7 +27,7 @@ function App() {
 
     return (
         <div className="container mt-5">
-            <h1 className="text-center mb-4">Drug Design ViT Predictor</h1>
+            <h1 className="text-center mb-4">DiagnoGen Ligand Activity Predictor</h1>
             <form onSubmit={handleSubmit} className="mb-4">
                 <div className="mb-3">
                     <label htmlFor="smilesInput" className="form-label">Enter SMILES:</label>
